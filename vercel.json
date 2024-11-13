@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "ingest.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "env": {
+    "DB_FAISS_PATH": "vectorstore/db_faiss"
+  }
+}
