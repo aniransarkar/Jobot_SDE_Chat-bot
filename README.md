@@ -1,6 +1,20 @@
 # Llama2: SDE INTERVIEW SUPPORT BOT
+Jobot is an AI-driven chatbot leveraging state-of-the-art Large Language Models (LLMs) to simulate technical interview scenarios for aspiring software developers. Built on a robust foundation of advanced natural language processing (NLP), information retrieval, and embeddings-based search techniques, the project integrates tools like FAISS for vector search, LangChain for conversational AI orchestration, and the Llama2 model for contextual understanding. By providing intelligent, interactive coaching on programming concepts and problem-solving techniques, Jobot empowers users to improve their technical communication and analytical skills while receiving real-time, personalized feedback.
 
-The Jobot is a powerful tool designed to provide Software Development information and interview assistance by answering user queries using state-of-the-art large language model(Llama2) and vector stores.
+Key Features:
+Technologies Used:
+
+Programming Languages: Python
+AI Models: Llama2 (Quantized)
+Frameworks and Libraries: LangChain, FAISS, Hugging Face Transformers
+Data Preprocessing: Pandas, NumPy
+Vector Store: FAISS (Facebook AI Similarity Search)
+Environment Management: Virtual environments using Conda
+Lightweight deployment using quantization for efficient CPU usage.
+Quantized Llama2 on CPU Systems:
+This project utilizes the quantized version of the Llama2 model, making it highly efficient for systems with limited GPU resources or entirely CPU-based systems. The quantized model significantly reduces memory usage and computational requirements while maintaining high performance. By leveraging this optimization, Jobot enables users with low-spec hardware to run a chatbot powered by Large Language Models (LLMs) seamlessly. This democratizes access to AI technologies, ensuring a broader range of users can benefit from advanced interview coaching without needing expensive hardware.
+
+This project is ideal for those seeking to refine their technical skills and ace software development interviews while ensuring accessibility for everyone, regardless of hardware constraints.
 
 Hi fellow AI enthusiasts! I would like to share the steps you all can follow to clone the project in your system and have fun playing around and experimenting with it. Here are the steps for successful execution:
 
