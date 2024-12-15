@@ -2,101 +2,55 @@
 
 The Jobot is a powerful tool designed to provide Software Development information and interview assistance by answering user queries using state-of-the-art large language model(Llama2) and vector stores.
 
-<!-- ## Table of Contents
+Hi fellow AI enthusiasts! I would like to share the steps you all can follow to clone the project in your system and have fun playing around and experimenting with it. Here are the steps for successful execution:
 
-- [Introduction](#langchain-medical-bot)
-- [Table of Contents](#table-of-contents)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+1. Clone the Repository
 
-## Prerequisites
+git clone <repository-url>
+cd <repository-folder>
 
-Before you can start using the Llama2 Medical Bot, make sure you have the following prerequisites installed on your system:
+2. Set Up a Virtual Environment
+   Install Python (3.8 or above required). Then create and activate a virtual environment:
 
-- Python 3.6 or higher
-- Required Python packages (you can install them using pip):
-  - langchain
-  - chainlit
-  - sentence-transformers
-  - faiss
-  - PyPDF2 (for PDF document loading)
+For Windows:
+python -m venv langchain
+langchain\Scripts\activate
 
-## Installation
+For macOS/Linux:
+python3 -m venv langchain
+source langchain/bin/activate
 
-1. Clone this repository to your local machine.
+3. Install Required Dependencies
+   Install all project dependencies from requirements.txt:
 
-   ```bash
-   git clone https://github.com/your-username/langchain-medical-bot.git
-   cd langchain-medical-bot
-   ```
+pip install -r requirements.txt
 
-2. Create a Python virtual environment (optional but recommended):
+4. Download Required Model and Data Files
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-   ```
+Download the Llama2 model from Hugging Face.
+Place the model files in the designated directory (e.g., models/llama2/).
 
-3. Install the required Python packages:
+5. Configure the Environment
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+Set up API keys or environment variables, if required (e.g., OpenAI, Hugging Face).
+Create a .env file (if applicable) and define necessary environment variables.
+Example .env file:
 
-4. Download the required language models and data. Please refer to the Langchain documentation for specific instructions on how to download and set up the language model and vector store.
+OPENAI_API_KEY=your_api_key
+HUGGINGFACE_API_KEY=your_api_key
 
-5. Set up the necessary paths and configurations in your project, including the `DB_FAISS_PATH` variable and other configurations as per your needs.
+6. Prepare the Vector Store (FAISS Database)
+   If not already created, run the following command to index documents:
 
-## Getting Started
+python ingest.py 7. Start the Chatbot
+Run the chatbot application locally:
 
-To get started with the Llama2 Medical Bot, you need to:
+chainlit run app.py
 
-1. Set up your environment and install the required packages as described in the Installation section.
+8. Access the Application
+   Open your browser and navigate to:
+   http://localhost:8000
 
-2. Configure your project by updating the `DB_FAISS_PATH` variable and any other custom configurations in the code.
-
-3. Prepare the language model and data as per the Langchain documentation.
-
-4. Start the bot by running the provided Python script or integrating it into your application.
-
-## Usage
-
-The Llama2 Medical Bot can be used for answering medical-related queries. To use the bot, you can follow these steps:
-
-1. Start the bot by running your application or using the provided Python script.
-
-2. Send a medical-related query to the bot.
-
-3. The bot will provide a response based on the information available in its database.
-
-4. If sources are found, they will be provided alongside the answer.
-
-5. The bot can be customized to return specific information based on the query and context provided.
-
-## Contributing
-
-Contributions to the Llama2 Medical Bot are welcome! If you'd like to contribute to the project, please follow these steps:
-
-1. Fork the repository to your own GitHub account.
-
-2. Create a new branch for your feature or bug fix.
-
-3. Make your changes and ensure that the code passes all tests.
-
-4. Create a pull request to the main repository, explaining your changes and improvements.
-
-5. Your pull request will be reviewed, and if approved, it will be merged into the main codebase.
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-For more information on how to use, configure, and extend the Llama2 Medical Bot, please refer to the Langchain documentation or contact the project maintainers.
-
-Happy coding with Llama2 Medical Bot! 🚀 -->
+9. Test and Interact with the Chatbot
+   Ask questions related to your trained dataset.
+   Evaluate chatbot responses for accuracy and relevance.
